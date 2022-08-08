@@ -1,0 +1,58 @@
+/* 
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  #1E1E1E - Very Dark Navy
+  #2A3344 - Dark Navy (Text)
+  #0E4498 - Dark Blue
+  #134D9D - Secondary Dark Blue
+  #4D94FF - Light Blue (Header Text)
+  #FFFFFF - White (Text & Background)
+*/
+:root {
+  --dark-grey: rgba(42, 51, 68, 0.65);
+  --dark-navy: #12213e;
+  --transparent-dark-navy: rgba(18, 33, 62, 0.80);
+  --grey-navy: #1e1e1e;
+  --dark-blue: #0e4498;
+  --secondary-dark-blue: #134D9D;
+  --light-blue: #4D94FF;
+  --white: #FFFFFF;
+  --transparent-white: #FFFFFF10;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 300vh;
+  overflow-x: hidden;
+}
+
+.background {
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: linear-gradient(-45deg, #0e4498,#7b10a5 );
+  background-size: 400%, 400%;
+  animation: change 15s ease-in-out infinite;
+}
+
+@keyframes change {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+

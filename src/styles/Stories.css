@@ -1,0 +1,40 @@
+.stories {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20rem);
+  grid-template-rows: repeat(auto-fill, 20rem);
+  justify-content: center;
+  gap: 1rem 1rem; 
+  width: 95%;
+  max-width: 62rem;
+}
+
+.story {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  height: 20rem;
+  width: 20rem;
+  background-color: var(--transparent-dark-navy);
+  padding: .5rem;
+  /* cursor: pointer; */
+}
+
+.story-title{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 5rem;
+  overflow-wrap: break-word;
+  -webkit-text-stroke: 1px var(--white);
+  color: transparent;
+}
