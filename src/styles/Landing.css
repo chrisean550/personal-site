@@ -43,12 +43,6 @@
   margin: 0 1rem;
 }
 
-@keyframes back{
-  100%{
-    background-position: 2000px 0;
-  }
-}
-
 @media screen and (max-width: 1400px) {
   .section-wrapper {
     background-size: cover;
@@ -75,7 +69,7 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 990px) {
   .section-wrapper{
     justify-content: center;
     align-items:flex-end;

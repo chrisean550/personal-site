@@ -1,0 +1,53 @@
+.skills {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skills h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--white);
+  background: url('../imgs/back.png');
+  background-clip: text;
+  background-position: 0 0;
+  animation: back 30s linear infinite;
+  margin: 0 1rem;
+}
+
+.skills-cloud{
+  max-width: 95vw;
+  /* background-color: var(--transparent-dark-navy); */
+  position: relative;
+}
+
+.cloud-list {
+  list-style: none;
+  text-align: center;
+  font-size: 12px;
+  width: 70rem;
+  max-width: 100vw;
+
+}
+
+.cloud-list li {
+  color: var(--white);
+  padding: 0 .5rem;
+  text-decoration: none;
+  font-weight: 700;
+  transition: opacity 10s 0s ease,
+              font-size 10s 0s ease;
+  display:inline-block;
+
+}
+
+@media screen and (max-width: 990px) {
+  .cloud-list{
+    text-align: left;
+    font-size: 8px;
+  }
+}

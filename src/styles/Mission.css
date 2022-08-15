@@ -1,0 +1,72 @@
+.mission {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mission-statement{
+  width: 90vw;
+  max-width: 30rem;
+}
+
+.mission-statement h2{
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.mission-statement span {
+  font-size: 4rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--white);
+  background: url('../imgs/back.png');
+  background-clip: text;
+  background-position: 0 0;
+  animation: back 30s linear infinite;
+}
+
+.mission-statement p {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: 'Nunito', sans-serif;
+}
+
+.mission-attribute {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  background-color: var(--transparent-dark-navy);
+  width: 30rem;
+  max-width: 90vw;
+  height: 8rem;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 3px 3px 12px -1px rgba(0, 0, 0, 0.30);
+}
+
+.mission-attribute h3 {
+  color: var(--light-blue);
+  font-size: 2rem;
+}
+
+.mission-attribute p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-family: 'Nunito', sans-serif;
+}
+
+@media screen and (max-width: 990px) {
+  .mission{
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .mission-attribute-wrapper {
+    align-self: flex-start;
+    margin-top: 3rem;
+  }
+}

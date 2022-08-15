@@ -2,7 +2,7 @@ import NavElement from './NavElement';
 
 
 const NavList = ({active}) => {
-  const navItems = ['Home', 'Stories', 'About', 'Skills', 'Contact'];
+  const navItems = ['Home', 'Stories', 'Mission', 'Skills', 'Contact'];
   const position = {
     transform: 'translateX(-100%)'
   }
