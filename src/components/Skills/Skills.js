@@ -4,7 +4,7 @@ import '../../styles/Skills.css';
 
 const Skills = () => {
   return (
-    <section className='skills'>
+    <section id='skills' className='skills'>
       <Heading />
       <SkillsCloud />
     </section>

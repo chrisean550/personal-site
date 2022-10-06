@@ -77,13 +77,14 @@
 
   .heading{
     align-self: flex-start;
+    margin: 1rem;
   }
 
   .heading-name{
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .heading-text{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }

@@ -4,7 +4,7 @@ import Headshot from './Headshot';
 const Landing = () => {
 
   return(
-    <section className='section-wrapper'>
+    <section id='home' className='section-wrapper'>
       <Headshot />
       <Heading />
     </section>

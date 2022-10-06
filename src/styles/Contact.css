@@ -1,0 +1,119 @@
+.contact {
+  min-width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+.contact-content h2{
+  font-size: 4rem;
+  font-weight: 300;
+  width: 40rem;
+  max-width: 95vw;
+}
+
+.contact-content span {
+  font-size: 4rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--white);
+  background: url('../imgs/back.png');
+  background-clip: text;
+  background-position: 0 0;
+  animation: back 30s linear infinite;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--transparent-dark-navy);
+  padding: 2rem;
+  box-shadow: -3px 5px 13px 0px rgba(0,0,0,0.26);
+  max-width: 95vw;
+  box-sizing: border-box;
+  margin: 0 0 3rem 0;
+}
+
+.contact-form h3 {
+  color: var(--light-blue);
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.contact-form label {
+  margin: .5rem 0;
+}
+
+.contact input, .contact textarea{
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.contact textarea{
+  height: 30vh;
+}
+
+.contact-input{
+  font-size: 2rem;
+  font-weight: 300;
+  border-bottom: .1rem solid var(--white);
+  padding: 1rem 1rem 0 0;
+}
+
+.contact-textarea {
+  border: .1rem solid var(--white);
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input, .contact-textarea {
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.contact-form button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--navy);
+  background-color: var(--light-blue);
+  width: 10rem;
+  height: 4rem;
+  margin: .5rem 0;
+  box-shadow: -3px 4px 13px 0px rgba(0,0,0,0.26);
+  transition: all ease-in-out .4s;
+  cursor: pointer;
+  border: none;
+  
+}
+
+
+
+
+@media screen and (max-width: 990px) {
+  .contact-content h2{
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 5rem 1rem 1rem 1rem;
+  }
+
+  .contact input, .contact textarea{
+    font-size: 1.25rem;
+  }
+
+  .contact-input, .contact-textarea{
+    font-size: 1.5rem;
+  }
+
+  .contact-form button {
+    height: 3rem;
+    width: 8rem;
+    font-size: 1.5rem;
+  }
+}

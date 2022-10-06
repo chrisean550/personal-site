@@ -4,7 +4,7 @@ import MissionStatement from './MissionStatement';
 
 const Mission = () => {
   return(
-    <section className='mission'>
+    <section id='misson' className='mission'>
       <MissionStatement />
       <MissionAttributeList />
     </section>

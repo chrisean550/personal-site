@@ -34,6 +34,14 @@ html, body {
   overflow-x: hidden;
 }
 
+input, textarea{
+  background-color: transparent;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+
 .background {
   z-index: -1;
   height: 100vh;

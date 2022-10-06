@@ -34,8 +34,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   overflow-wrap: break-word;
   -webkit-text-stroke: 1px var(--white);
   color: transparent;
+}
+
+@media screen and (max-width: 990px) {
+  .story-title{
+    font-size: 3.5rem;
+  }
 }

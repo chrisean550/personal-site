@@ -15,6 +15,7 @@
 .mission-statement h2{
   font-size: 4rem;
   font-weight: 300;
+  margin: 3rem 1rem 0 1rem;
 }
 
 .mission-statement span {
@@ -65,8 +66,28 @@
     align-items: flex-end;
   }
 
+  .mission-statement h2 {
+    text-align: center;
+  }
+
+  .mission-statement p {
+    line-height: 2.5rem;
+  }
+
   .mission-attribute-wrapper {
     align-self: flex-start;
     margin-top: 3rem;
+  }
+
+  .mission-statement h2{
+    font-size: 3.5rem;
+  }
+  
+  .mission-statement span {
+    font-size: 3.5rem;
+  }
+  
+  .mission-statement p {
+    font-size: 1.5rem;
   }
 }

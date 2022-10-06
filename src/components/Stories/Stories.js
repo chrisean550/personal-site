@@ -3,12 +3,12 @@ import Story from './Story';
 
 const Stories = () => {
   return(
-    <section className='stories'>
+    <section id='stories' className='stories'>
       <div className='wrapper'>
         <Story story='FLOH'/>
         <Story story='JoJo'/>
         <Story story='Han Art'/>
-        <Story story='Run Automated'/>
+        <Story story='Run Auto'/>
         <Story story='BLM Wash'/>
         <Story story='C. May Interiors'/>
       </div>

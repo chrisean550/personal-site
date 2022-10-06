@@ -3,9 +3,9 @@ const MissionStatement = () => {
   return(
     <div className='mission-statement'>
       <h2>Creating <span>Value</span></h2>
+      <br/>
       <p>
-        Great websites should be made with a purpose.
-        To bring value to all who interacts with it.
+        Great websites are meant to bring value to everyone who interacts with it.
       </p>
     </div>
   )

@@ -17,6 +17,7 @@
   background-position: 0 0;
   animation: back 30s linear infinite;
   margin: 0 1rem;
+  text-align: center;
 }
 
 .skills-cloud{
@@ -28,8 +29,8 @@
 .cloud-list {
   list-style: none;
   text-align: center;
-  font-size: 12px;
-  width: 70rem;
+  font-size: 10px;
+  width: 80rem;
   max-width: 100vw;
 
 }
@@ -47,7 +48,12 @@
 
 @media screen and (max-width: 990px) {
   .cloud-list{
-    text-align: left;
-    font-size: 8px;
+    /* text-align: left; */
+    font-size: 6px;
+  }
+
+  .skills h2{
+    font-size: 3.5rem;
+    margin: 3rem 1rem;
   }
 }
