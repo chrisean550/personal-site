@@ -23,6 +23,27 @@
 * {
   margin: 0;
   padding: 0;
+  scrollbar-width: auto;
+  scrollbar-color: rgba(42, 51, 68, 0.65);
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(42, 51, 68, 0.65);
+  border-radius: 0px;
+  border: 0px none #ffffff;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 html, body {
@@ -32,6 +53,8 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 300vh;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow: overlay;
 }
 
 input, textarea{
@@ -40,7 +63,6 @@ input, textarea{
   resize: none;
   outline: none;
 }
-
 
 .background {
   z-index: -1;

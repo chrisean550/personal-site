@@ -1,8 +1,8 @@
 const NavElement = (props) => {
   return(
-    <div className='navElement'>
+    <a className='navElement' href={"#"+props.link.toLowerCase()}>
       {props.link}
-    </div>
+    </a>
   )
 }
 
