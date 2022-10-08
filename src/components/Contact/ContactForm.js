@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 const ContactForm = () => {
   const [name, updateName] = useState("");
   const [email, updateEmail] = useState("");
@@ -23,6 +24,7 @@ const ContactForm = () => {
     updateName('');
     updateEmail('');
     updateMessage('Yea.. so I have not set up the form yet. But feel free to shoot me an email at chriseannichols@gmail.com');
+    
   }
 
   return(
