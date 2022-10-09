@@ -21,12 +21,16 @@ const ContactForm = () => {
     }
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    FormAPI(name, email, message);
-    updateName('');
-    updateEmail('');
-    updateMessage('');  
+    const success = await FormAPI(name, email, message);
+    if(success){
+      updateName('');
+      updateEmail('');
+      updateMessage('Message Sent!');
+    } else{
+      alert('There was an issue with the submission.')
+    } 
   }
 
   return(

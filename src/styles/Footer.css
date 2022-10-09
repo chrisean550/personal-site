@@ -1,0 +1,27 @@
+.footer {
+  width: 100vw;
+  background-color: var(--dark-navy);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.socials{
+  margin: 0 0 2rem 0;
+}
+
+.socials a{
+  font-size: 1.5rem;
+  margin: 1rem;
+  transition: color .2s;
+}
+
+.socials a:hover{
+  color: var(--light-blue);
+}
+
+.footer p{
+  font-weight: 300;
+}
