@@ -1,4 +1,6 @@
 import { useState } from "react";
+import FormAPI from "../../adapters/FormAPI";
+
 
 
 const ContactForm = () => {
@@ -21,10 +23,10 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    FormAPI(name, email, message);
     updateName('');
     updateEmail('');
-    updateMessage('Yea.. so I have not set up the form yet. But feel free to shoot me an email at chriseannichols@gmail.com');
-    
+    updateMessage('');  
   }
 
   return(

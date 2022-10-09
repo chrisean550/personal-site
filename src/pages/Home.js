@@ -5,9 +5,7 @@ import Skills from '../components/Skills/Skills';
 import Stories from '../components/Stories/Stories';
 import Contact from '../components/Contact/Contact';
 
-
 const Home = () => {
-  
   return (
     <>
       <div className='background'></div>
