@@ -40,6 +40,15 @@
   color: transparent;
 }
 
+.story-title:hover{
+  -webkit-text-stroke: 1px var(--white);
+  background: url('../imgs/back.png');
+  background-clip: text;
+  background-position: 0 0;
+  animation: back 30s linear infinite;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 990px) {
   .story-title{
     font-size: 3.5rem;
