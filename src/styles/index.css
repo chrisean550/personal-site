@@ -1,12 +1,6 @@
 /* 
   font-family: 'Nunito', sans-serif;
   font-family: 'Roboto', sans-serif;
-  #1E1E1E - Very Dark Navy
-  #2A3344 - Dark Navy (Text)
-  #0E4498 - Dark Blue
-  #134D9D - Secondary Dark Blue
-  #4D94FF - Light Blue (Header Text)
-  #FFFFFF - White (Text & Background)
 */
 :root {
   --dark-grey: rgba(42, 51, 68, 0.65);
@@ -52,9 +46,10 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 300vh;
-  overflow-x: hidden;
+  overflow-x:hidden;
   scroll-behavior: smooth;
   overflow: overlay;
+  font-size: 20px;
 }
 
 input, textarea{
@@ -69,7 +64,7 @@ input, textarea{
   height: 100vh;
   width: 100vw;
   position: fixed;
-  background: linear-gradient(-45deg, #0e4498,#7b10a5 );
+  background: linear-gradient(-45deg, #043686,#5a007e );
   background-size: 400%, 400%;
   animation: change 15s ease-in-out infinite;
 }
