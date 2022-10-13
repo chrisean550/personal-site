@@ -1,0 +1,8 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "SENDGRID_API_KEY": "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"
+  }
+}
