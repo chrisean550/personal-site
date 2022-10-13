@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FormAPI from "../../adapters/FormAPI";
+import ReCaptchaV2 from 'react-google-recaptcha';
 
 
 
@@ -7,6 +8,7 @@ const ContactForm = () => {
   const [name, updateName] = useState("");
   const [email, updateEmail] = useState("");
   const [message, updateMessage] = useState("");
+  const [token, updateToken] = useState("");
 
   const handleInputChange = (e) => {
     const target = e.target;
@@ -21,9 +23,17 @@ const ContactForm = () => {
     }
   }
 
+  const handleToken = (token) =>{
+    updateToken(token);
+  }
+
+  const handleExpire = () =>{
+    updateToken(null);
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const success = await FormAPI(name, email, message);
+    const success = await FormAPI(name, email, message, token);
     if(success){
       updateName('');
       updateEmail('');
@@ -54,10 +64,11 @@ const ContactForm = () => {
       </label>
       <div className='submit-wrapper'>
         <input className='submit' type='submit' value='Submit'/>
-        <div 
-          className='g-recaptcha'
-          data-sitekey='6Le8iGoiAAAAAM06XsBTs3Cn6X1b9MYjj_dQXg5z'  
-        ></div>
+        <ReCaptchaV2 
+          sitekey={process.env.REACT_APP_SITE_KEY} 
+          onChange={handleToken}
+          onExpired={handleExpire}
+        />
       </div>
     </form>
   )
