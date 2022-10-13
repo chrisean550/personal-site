@@ -1,4 +1,7 @@
 import { useState } from "react";
+import FormAPI from "../../adapters/FormAPI";
+
+
 
 const ContactForm = () => {
   const [name, updateName] = useState("");
@@ -18,11 +21,16 @@ const ContactForm = () => {
     }
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    updateName('');
-    updateEmail('');
-    updateMessage('Yea.. so I have not set up the form yet. But feel free to shoot me an email at chriseannichols@gmail.com');
+    const success = await FormAPI(name, email, message);
+    if(success){
+      updateName('');
+      updateEmail('');
+      updateMessage('Message Sent!');
+    } else{
+      alert('There was an issue with the submission.')
+    } 
   }
 
   return(
@@ -44,7 +52,13 @@ const ContactForm = () => {
         Message:&#160;
         <textarea name='message' value={message} onChange={handleInputChange}/>
       </label>
-      <input className='submit' type='submit' value='Submit'/>
+      <div className='submit-wrapper'>
+        <input className='submit' type='submit' value='Submit'/>
+        <div 
+          className='g-recaptcha'
+          data-sitekey='6Le8iGoiAAAAAM06XsBTs3Cn6X1b9MYjj_dQXg5z'  
+        ></div>
+      </div>
     </form>
   )
 }
