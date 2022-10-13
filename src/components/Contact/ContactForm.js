@@ -52,7 +52,13 @@ const ContactForm = () => {
         Message:&#160;
         <textarea name='message' value={message} onChange={handleInputChange}/>
       </label>
-      <input className='submit' type='submit' value='Submit'/>
+      <div className='submit-wrapper'>
+        <input className='submit' type='submit' value='Submit'/>
+        <div 
+          className='g-recaptcha'
+          data-sitekey='6Le8iGoiAAAAAM06XsBTs3Cn6X1b9MYjj_dQXg5z'  
+        ></div>
+      </div>
     </form>
   )
 }
