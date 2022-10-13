@@ -33,6 +33,8 @@ jobs:
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
           production_branch: "master"
+        env:
+          REACT_APP_FORM_API:"https://thankful-bush-04b9adc10.2.azurestaticapps.net/api/emailer"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
