@@ -35,6 +35,7 @@ jobs:
           production_branch: "master"
         env:
           REACT_APP_FORM_API: "https://thankful-bush-04b9adc10.2.azurestaticapps.net/api/emailer"
+          REACT_APP_SITE_KEY: "6LdITnwiAAAAAC2KwTC7ve25NwyOaLc6vCjMB__R"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
